@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <section class="registration">
+        <h1>Регистрация</h1>
+        <form action="index1.php" method="POST" id="reg-form">
+            <article class="blocks-with-inpts">
+                <article class="inpts">
+                    <input type="text" name="username" placeholder="Имя" required id="inp-username">
+                    <input type="email" name="email" placeholder="Почта" required id="inp-email">
+                    <input type="password" name="password" placeholder="Пароль" required id="inp-pwd">
+                    <input type="password" name="repit_password" placeholder="Подтвердите пароль" required id="inp-repeatpwd">
+                </article>
+                <article class="inpts">
+                    <input type="text" name="phone_number" placeholder="Номер телефона" id="inp-phone">
+                    <select name="came_from">
+                        <option value="site">site</option>
+                        <option value="city">city</option>
+                        <option value="tv">tv</option>
+                        <option value="others">other</option>
+                    </select>
+                    <input type="date" name="date_birth" placeholder="Дата рождения" required id="inp-birthday">
+                </article>
+            </article>
+            <button type="submit" id="registration_button">Зарегистрироваться</button>
+        </form>
+    </section>
+</body>
+</html>
